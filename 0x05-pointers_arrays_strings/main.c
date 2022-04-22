@@ -1,49 +1,17 @@
-#include "main.h"
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
 
-/
- * _strcmp - a function that compares two strings
- *
- * @s1: string 1 input to compare
- * @s2: against this other string 2
- *
- * Return: 0 if s1 and s2 are equal
- *        negative integer if the stopping character
- *                in @s1 was less than the stopping
- *                character in @s2
- *        positive integer if the stopping character
- *                in @s1 was greater than the stopping
- *                character in @s2
-*/
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+int _strlen(char *s);
+void _puts(char *str);
+int _putchar(char);
+void print_rev(char *s);
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
 
- int _strcmp(char *s1, char *s2)
-{
-int i = 0, r;
-
- /
-* iterate through src and
-* compare it with dest
- */
-while (s1[i] != '\0' && s2[i] != '\0')
-{
-/**
-* if they differ by a single character
-* don't iterate further
-*/
-if (s1[i] != s2[i])
-{
- /*
- * return the difference between
- * the two characters
- */
-r = s1[i] - s2[i];
-break;
-}
-else
-{
-r = s1[i] - s2[i];
-}
-i++;
-}
-
- return (r);
-}
+#endif
