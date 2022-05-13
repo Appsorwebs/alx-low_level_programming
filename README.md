@@ -1,1 +1,0 @@
-echo Practicing function pointers
